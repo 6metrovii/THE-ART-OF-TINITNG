@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230320185726">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230321124135">
     <title>THE ART OF TINITNG</title>
 </head>
 
@@ -131,14 +131,22 @@
                                         <picture><source srcset="img/tint-slider1.webp" type="image/webp"><img src="img/tint-slider1.png" alt="image"></picture>
                                     </div>
                                     <div class=" _slide">
-                                        <picture><source srcset="img/tint-slider1.webp" type="image/webp"><img src="img/tint-slider1.png" alt="image"></picture>
+                                        <picture><source srcset="img/gallery/gallery1.webp" type="image/webp"><img src="img/gallery/gallery1.jpg" alt="image"></picture>
                                     </div>
                                     <div class=" _slide">
-                                        <picture><source srcset="img/tint-slider1.webp" type="image/webp"><img src="img/tint-slider1.png" alt="image"></picture>
+                                        <picture><source srcset="img/gallery/gallery2.webp" type="image/webp"><img src="img/gallery/gallery2.jpg" alt="image"></picture>
+                                    </div>
+                                    <div class=" _slide">
+                                        <picture><source srcset="img/gallery/gallery3.webp" type="image/webp"><img src="img/gallery/gallery3.jpg" alt="image"></picture>
                                     </div>
                                 </div>
                             </div>
-                            <div class="_slider-dots"></div>
+                            <div class="dots-wrapper">
+                                <div class="_slider-dots">
+                                    <div class="slider-dot"></div>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="dots-black">
                             <picture><source srcset="img/ovals/ovalsBlack.webp" type="image/webp"><img src="img/ovals/ovalsBlack.png" alt="icons"></picture>
@@ -149,17 +157,21 @@
         </section>
         <section class="paint">
             <div class="paint-video">
-                <div class="paint-video-container">
-                    <button class="video-play">
-                        <div class="play-icon icon-play"></div>
-                    </button>
-                    <div class="video-select">
-                        <ul class="select-items">
-                            <li><button class="select-item">Paint Protection (PPF)</button></li>
-                        </ul>
-                        <div class="select-icon ">
-                            <img src="img/icons/eye.svg" alt="icon">
-                        </div>
+                <video  preload="metadata"  class="video1 _video" src=""  poster="img/sectionVideo-bg.jpg"></video>
+                <video  preload="metadata" class="video2 _video" src=""  poster="img/section1-bg.jpg"></video>
+                <video  preload="metadata" class="video3 _video" src=""  poster="img/sectionVideo-bg.jpg"></video>
+                <button class="video-play">
+                    <div class="play-icon icon-play"></div>
+                </button>
+                <div class="video-select">
+                    <ul class="select-items">
+                        <div class="select-title">Paint Protection (PPF)</div>
+                        <li><button class="select-item">Paint Protection (PPF)</button></li>
+                        <li><button class="select-item">Window Tint</button></li>
+                        <li><button class="select-item">Ceramic coating</button></li>
+                    </ul>
+                    <div class="select-icon ">
+                        <img src="img/icons/eye.svg" alt="icon">
                     </div>
                 </div>
                 
@@ -294,12 +306,15 @@
                 <div class="contacts-form-block">
                     <h2 class="contact-title _title">Get a Free quote</h2>
                     <div class="contact-text">Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</div>
-                    <form action="#">
-                        <input placeholder="Name *" type="text"name="name" required>
-                        <input placeholder="Phone number *" type="tel"name="phone" required>
+                    <form class="form" action="#">
+                        <input class="req"  placeholder="Name *" type="text"name="name" >
+                        <input class="req" placeholder="Phone number *" type="tel"name="phone" >
                         <input placeholder="Email" type="email"name="mail">
                         <input placeholder="Message" type="text"name="message">
                         <button class="form-button">Send Message</button>
+                        <div class="form-message">
+                            <div class="form-spinner"><span></span></div>
+                        </div>
                     </form>
                     <div class="contact-info">
                         <div class="contact-items">
@@ -354,6 +369,6 @@
         </div>
     </div>
 </footer>
-    <script src="js/app.min.js?_v=20230320185726"></script>
+    <script src="js/app.min.js?_v=20230321124135"></script>
 </body>
 </html>
